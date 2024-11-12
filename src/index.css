@@ -1,0 +1,114 @@
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+}
+
+/* Header */
+.app-header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 28rem;
+  margin-bottom: 32px;
+}
+
+/* Search Input */
+.search-input {
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+  width: 100%;
+  color: #1f2937;
+}
+
+/* Search Button */
+.search-button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #059669;
+}
+
+.search-button:disabled {
+  background-color: #a7f3d0;
+  cursor: not-allowed;
+}
+
+/* Book List */
+.book-list {
+  width: 100%;
+  max-width: 48rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .book-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Book Card */
+.book-card {
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  color: #1f2937;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Title */
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 8px;
+}
+
+/* Book Author */
+.book-author {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* Book Publish Year */
+.book-publish-year {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Book Cover Image */
+.book-cover {
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+/* No Results Text */
+.no-results {
+  color: #d1d5db;
+  margin-top: 32px;
+  text-align: center;
+}
